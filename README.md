@@ -1,0 +1,1 @@
+An AI-powered voice assistant built with Python and Google's Gemini API.
