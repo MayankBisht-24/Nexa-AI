@@ -1,232 +1,170 @@
-# 🤖 NEXA AI — Personal Voice Assistant
+# 🤖 NEXA AI
 
-<p align="center">
+::: {align="center"}
+### Intelligent Personal Voice Assistant Powered by Google Gemini
 
-<img src="https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python">
-<img src="https://img.shields.io/badge/Gemini-AI-orange?style=for-the-badge&logo=google">
-<img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
-<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
+`<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=28&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=900&lines=Built+with+Python;Powered+by+Google+Gemini;Voice+Recognition+%2B+AI;Secure+Production+Ready">`{=html}
 
-</p>
+`<br>`{=html}
 
-A powerful AI-powered desktop voice assistant built with Python and Google Gemini.
+`<img src="https://img.shields.io/github/stars/MayankBisht-24/Nexa-AI?style=for-the-badge">`{=html}
+`<img src="https://img.shields.io/github/forks/MayankBisht-24/Nexa-AI?style=for-the-badge">`{=html}
+`<img src="https://img.shields.io/github/last-commit/MayankBisht-24/Nexa-AI?style=for-the-badge">`{=html}
+`<img src="https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python">`{=html}
+`<img src="https://img.shields.io/badge/Google-Gemini-orange?style=for-the-badge&logo=google">`{=html}
+:::
 
-NEXA listens for your voice, understands your commands, performs useful desktop actions, and intelligently answers questions using Google's Gemini AI.
+------------------------------------------------------------------------
 
-Designed with clean architecture, secure API handling, and real-world development practices.
+# 🌟 About
 
----
+**NEXA AI** is a modern desktop voice assistant built with **Python**
+and powered by **Google Gemini AI**.
+
+It listens for your voice, understands commands, performs desktop
+automation, and responds naturally using AI. The project follows secure
+coding practices by storing API keys in environment variables instead of
+source code.
+
+------------------------------------------------------------------------
 
 # ✨ Features
 
-* 🎙️ Wake word detection ("Nexa")
-* 🧠 AI-powered conversations using Google Gemini
-* 🔊 Natural text-to-speech responses
-* 🎤 Speech recognition with microphone input
-* 🌐 Open websites using voice commands
-* 🕒 Tell current time and date
-* 💬 Friendly conversational responses
-* 🔐 Secure API key management using `.env`
-* 🧹 Automatic temporary audio cleanup
-* ⚡ Lightweight and beginner-friendly architecture
+-   🎙️ Wake Word Detection ("Nexa")
+-   🧠 Google Gemini AI Integration
+-   💬 Intelligent Conversations
+-   🔊 Natural Text-to-Speech
+-   🎤 Speech Recognition
+-   🌐 Browser Automation
+-   🕒 Time & Date
+-   🔐 Secure `.env` API Key
+-   🧹 Automatic Audio Cleanup
+-   ⚡ Clean & Modular Architecture
 
----
+------------------------------------------------------------------------
 
 # 🛠️ Tech Stack
 
-* Python 3.12
-* Google Gemini API
-* SpeechRecognition
-* gTTS
-* pygame
-* python-dotenv
-* PyAudio
+  Technology          Purpose
+  ------------------- -----------------------
+  Python              Core Language
+  Google Gemini       AI Responses
+  SpeechRecognition   Voice Input
+  gTTS                Voice Output
+  pygame              Audio Playback
+  python-dotenv       Environment Variables
+  PyAudio             Microphone
 
----
+------------------------------------------------------------------------
 
 # 📂 Project Structure
 
-```
-NEXA-AI/
-│
+``` text
+Nexa-AI/
 ├── main.py
-├── .env
-├── requirements.txt
 ├── README.md
-└── .gitignore
+├── requirements.txt
+├── .gitignore
+└── .env
 ```
 
----
+------------------------------------------------------------------------
 
 # 🚀 Installation
 
-## Clone Repository
+``` bash
+git clone https://github.com/MayankBisht-24/Nexa-AI.git
 
-```bash
-git clone https://github.com/yourusername/NEXA-AI.git
+cd Nexa-AI
 
-cd NEXA-AI
-```
-
-## Create Virtual Environment
-
-```bash
 python -m venv .venv
-```
 
-Activate it
-
-Windows
-
-```bash
+# Windows
 .venv\Scripts\activate
-```
 
-Mac/Linux
+pip install -r requirements.txt
 
-```bash
-source .venv/bin/activate
-```
-
----
-
-# 📦 Install Dependencies
-
-```bash
-pip install gTTS pygame SpeechRecognition pyaudio google-genai python-dotenv
-```
-
----
-
-# 🔑 Setup Environment Variables
-
-Create a file named
-
-```
-.env
-```
-
-Inside it add
-
-```env
-GEMINI_API_KEY=YOUR_API_KEY
-```
-
-Never upload your API key to GitHub.
-
----
-
-# ▶️ Run
-
-```bash
 python main.py
 ```
 
-NEXA will start listening.
+------------------------------------------------------------------------
 
-Simply say
+# 🔑 Environment Variables
 
-> "Nexa"
+Create a file named:
 
-Then speak your command.
-
----
-
-# 🎤 Example Commands
-
-```
-Open Google
-
-Open YouTube
-
-Open GitHub
-
-What is the time?
-
-What is today's date?
-
-Who created you?
-
-How are you?
-
-Tell me about Artificial Intelligence
-
-Exit
+``` text
+.env
 ```
 
----
+Add:
+
+``` env
+GEMINI_API_KEY=YOUR_API_KEY
+```
+
+------------------------------------------------------------------------
+
+# 🎤 Voice Commands
+
+-   Open Google
+-   Open YouTube
+-   Open GitHub
+-   Open ChatGPT
+-   What is the time?
+-   What is today's date?
+-   Who created you?
+-   Hello Nexa
+-   Exit
+
+------------------------------------------------------------------------
 
 # 🔒 Security
 
-This project never stores API keys inside the source code.
+-   No hardcoded API keys
+-   Uses `.env`
+-   Safe for GitHub
+-   Production-friendly structure
 
-All sensitive credentials are loaded securely using:
+------------------------------------------------------------------------
 
-* python-dotenv
-* .env file
-* environment variables
+# 🛣️ Future Roadmap
 
----
+-   Weather
+-   Spotify Control
+-   WhatsApp Automation
+-   Face Recognition
+-   GUI Version
+-   Offline Mode
+-   Smart Home Integration
+-   Multi-language Support
 
-# 🎯 Future Improvements
-
-* Weather information
-* Spotify controls
-* WhatsApp messaging
-* Email support
-* Face recognition
-* Home automation
-* Desktop application (GUI)
-* Offline speech recognition
-* Multi-language support
-* Custom plugins
-
----
-
-# 📸 Preview
-
-```
-Initializing Nexa...
-
-Say "Nexa"
-
-You:
-Open Google
-
-Nexa:
-Opening Google for you boss.
-```
-
----
+------------------------------------------------------------------------
 
 # 🤝 Contributing
 
-Contributions, ideas, and improvements are always welcome.
+Contributions are welcome!
 
-Fork the repository, create a new branch, and submit a Pull Request.
+1.  Fork the repository
+2.  Create a feature branch
+3.  Commit your changes
+4.  Open a Pull Request
 
----
+------------------------------------------------------------------------
 
 # ⭐ Support
 
-If you found this project helpful,
+If you like this project, consider giving it a **⭐ Star** on GitHub.
 
-please consider giving it a ⭐ on GitHub.
+------------------------------------------------------------------------
 
-It motivates me to build more open-source projects.
+::: {align="center"}
+## 👨‍💻 Developer
 
----
+### Mayank Bisht
 
-# 👨‍💻 Developer
+**BCA (Data Science)**\
+**Python Developer • AI Enthusiast**
 
-**Mayank Bisht**
-
-BCA (Data Science) Student
-
-Python Developer | AI Enthusiast | Open Source Learner
-
-Building projects to learn, improve, and solve real-world problems.
-
----
-
-
+**Building AI Projects One Step At A Time ❤️**
+:::
